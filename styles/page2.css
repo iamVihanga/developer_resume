@@ -1,0 +1,303 @@
+.page_2 {
+  display: grid;
+  grid-template-columns: 22% 1fr;
+}
+.page_2_container {
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.full_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-right: 30px;
+}
+.full_header .title {
+  background-color: #000;
+  padding: 8px 20px;
+  color: #f4e1ec;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.full_header i {
+  font-size: 1.2rem;
+}
+
+.page_2 .grid_col {
+  border-left: 0.5px solid black;
+  overflow: hidden;
+}
+
+.page_2 .grid_col#left_side {
+  position: relative;
+  width: 99%;
+  background: #eecdc680;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.page_2 .grid_col#left_side .content {
+  width: 100%;
+  height: 95%;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+}
+
+.page_2 .grid_col#left_side .absolute_balls #ball-1 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #ebbcd09c;
+  transform: translate(-1px, -10px);
+  width: 155px;
+  height: 155px;
+}
+.page_2 .grid_col#left_side .absolute_balls #ball-2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #a2edc5a1;
+  transform: translate(-55px, 700px);
+  width: 155px;
+  height: 155px;
+}
+
+.page_2 .grid_col#left_side .text {
+  height: 100%;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.page_2 .grid_col#left_side .text h1 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.page_2 .grid_col#left_side .text h1#outline {
+  color: #eecdc6;
+  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000,
+    2px -2px 0 #000;
+}
+
+.page_2 .grid_col#left_side .rectangle {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+}
+
+.page_2 .grid_col header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page_2 .grid_col header small {
+  text-transform: uppercase;
+}
+
+.page_2 .grid_col header small#page-no {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.52px;
+}
+
+.page_2 .grid_col header small#site-name {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+
+.skills_desc {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 16.5px */
+  letter-spacing: 0.66px;
+  text-align: justify;
+}
+
+.personal_skills_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.personal_skills_area .card {
+  border-radius: 7px;
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0);
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 15px 20px;
+}
+
+.personal_skills_area .card .icon i {
+  font-size: 30px;
+}
+
+.personal_skills_area .card .content h2 {
+  font-size: 18px;
+}
+
+.personal_skills_area .card .content h5 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000b9;
+  margin-top: 5px;
+}
+
+.freelance_area {
+  margin-left: 25px;
+  position: relative;
+}
+
+.freelance_area .freelance_card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.freelance_area .freelance_card .row_1 {
+  display: flex;
+  align-items: center;
+  column-gap: 1.8rem;
+  position: relative;
+}
+.freelance_area .freelance_card .row_1 .years {
+  text-align: end;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.freelance_area .freelance_card .row_1 #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  position: absolute;
+  left: 111px;
+}
+
+.freelance_area .freelance_card .row_1 .content {
+  margin-left: 30px;
+}
+
+.freelance_area .freelance_card .row_1 .content .position {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.freelance_area .freelance_card .row_1 .content .company {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.freelance_area .freelance_card .right {
+  padding: 11px 20px;
+  border: 1px solid #000000a2;
+  border-radius: 10px;
+}
+
+.freelance_area .freelance_card .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.freelance_area .freelance_card .right img:first-child {
+  height: 25px;
+}
+
+.freelance_area .line {
+  width: 1px;
+  height: 110%;
+  background-color: #000;
+  position: absolute;
+  top: -55px;
+  left: 135px;
+}
+
+.page_2 .grid_col .testimonial_section {
+  position: relative;
+  display: flex;
+}
+
+.testimonial_section span {
+  font-size: 30px;
+  position: absolute;
+}
+
+.testimonial_section span:nth-child(1) {
+  top: 1rem;
+  left: 1.5rem;
+}
+.testimonial_section span:nth-child(2) {
+  top: 9rem;
+  right: 2rem;
+}
+
+.page_2 .grid_col .testimonial_section .content {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.page_2 .grid_col .testimonial_section .content .review_card {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 0px 4rem;
+}
+
+.page_2 .grid_col .testimonial_section .content .review_card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  border: 1px solid #0000003d;
+}
+
+.testimonial_section .content .review_card .review_content h2 {
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.testimonial_section .content .review_card .review_content h5 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 2px;
+  color: #000000be;
+}
+
+.testimonial_section .content .review_card .review_content p {
+  font-size: 12px;
+  margin-top: 12px;
+  line-height: 145%;
+  font-weight: 500;
+}

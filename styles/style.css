@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ---------------------------------------------- */
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: 20px auto;
+  border-radius: 15px;
+  background: linear-gradient(186deg, #fff2ff -2.12%, #ffe0e6 106.62%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.subpage {
+  height: 29.7cm;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+    background: linear-gradient(186deg, #fff2ff -2.12%, #ffe0e6 106.62%);
+  }
+
+  .page_2 .grid_col#left_side .absolute_balls {
+    display: none;
+  }
+}
+/* ---------------------------------------------- */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #6b6668;
+}
+
+.title {
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}

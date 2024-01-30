@@ -1,0 +1,44 @@
+.page_3 .grid_col#left_side .rectangle {
+  height: 200px;
+}
+
+.page_3 .certificate_list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.page_3 .certificate_card {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.page_3 .certificate_card img {
+  height: 70px;
+}
+
+.page_3 .certificate_card .content a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.page_3 .certificate_card .content a:hover {
+  text-decoration: underline;
+}
+
+.page_3 .certificate_card .content p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #575757;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
