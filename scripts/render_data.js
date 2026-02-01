@@ -1,39 +1,39 @@
 const skills_data = [
   {
     id: 1,
-    name: "Programming Basics",
-    precentage: 90,
+    name: "Backend Engineering",
+    precentage: 90
   },
   {
     id: 2,
-    name: "Frontend",
-    precentage: 75,
+    name: "Frontend Development / UI",
+    precentage: 90
   },
   {
     id: 3,
-    name: "Backend",
-    precentage: 85,
+    name: "Database Administration",
+    precentage: 90
   },
   {
     id: 5,
-    name: "UI/UX Design",
-    precentage: 45,
+    name: "AI Integrated Dev.",
+    precentage: 80
   },
   {
     id: 4,
-    name: "Cloud & DevOps",
-    precentage: 60,
+    name: "Cloud Native & DevOps",
+    precentage: 60
   },
   {
     id: 5,
-    name: "App Development",
-    precentage: 70,
+    name: "ERP/POS Development",
+    precentage: 60
   },
   {
     id: 6,
-    name: "Database (NoSQL)",
-    precentage: 80,
-  },
+    name: "Mobile Development",
+    precentage: 70
+  }
 ];
 
 (function renderTechSkills() {
@@ -60,20 +60,20 @@ const education_shortList = [
     id: 1,
     title: "GCE Ordinary Level",
     years: "2018 - 2019",
-    institute: "B/President College",
+    institute: "Sri Lanka"
   },
   {
     id: 2,
     title: "GCE Advanced Level",
     years: "2021 - 2022",
-    institute: "B/President College",
+    institute: "Sri Lanka"
   },
   {
     id: 3,
-    title: "BTech in Software Eng.",
-    years: "2023 - Current",
-    institute: "University of Vocational Tech.",
-  },
+    title: "BIT (External)",
+    years: "2025 - Current",
+    institute: "University of Colombo"
+  }
 ];
 
 (function renderTechSkills() {
@@ -100,28 +100,28 @@ const education_shortList = [
 const work_experience_shortList = [
   {
     id: 1,
-    company: "Fiverr",
-    role: "Frontend Developer",
-    years: "January - March 2022",
+    company: "Duber LTD",
+    role: "Full Stack Developer / Technical Head",
+    years: "Sept. 2022 - 2024",
     description:
-      "I started my freelancer journey with Fiverr as a intermidiate frontend developer",
+      "I got remote job from Duber.UK (ltd) a  Drone Pilot Company - in 2022. I worked as Full Stack Web & Mobile Developer and DevOps Engineer"
   },
   {
     id: 2,
-    company: "Duber LTD",
-    role: "Web Developer",
-    years: "Sept. - December 2022",
+    company: "ServerClub",
+    role: "Intern Web Developer",
+    years: "July - Oct 2024",
     description:
-      "I got remote job from Duber.UK (ltd) Startup Company in 2022.",
+      "I worked as a Intern Web Developer at ServerClub (Sri Lanka) fir 3 months period. Developed WHMCS Integrated Management Portal for Internal Operations."
   },
   {
     id: 3,
-    company: "Duber LTD",
-    role: "Technical Head",
-    years: "Jan 2023 - Current",
+    company: "DONEXT Ltd.",
+    role: "Lead Software Developer",
+    years: "Oct 2024 - 2025",
     description:
-      "Promoted as Technical Head of Duber LTD Startup Company and currently working with them.",
-  },
+      "Managed a team of developers to deliver high-quality software solutions, Designed system architecture and oversaw code quality and best practices."
+  }
 ];
 
 (function renderTechSkills() {
@@ -149,26 +149,26 @@ const personal_skills = [
     title: "Collaborative Working",
     description:
       "Skills in using collaborative tools like Notions, ZenHub etc.",
-    icon: "<i class='bx bxs-group' ></i>",
+    icon: "<i class='bx bxs-group' ></i>"
   },
   {
     id: 1,
     title: "Communication",
     description: "Ability to work with english and handlling the accent",
-    icon: "<i class='bx bxs-user-voice'></i>",
+    icon: "<i class='bx bxs-user-voice'></i>"
   },
   {
     id: 1,
     title: "Managed Workflow",
     description: "Well management is a key specification of my tasks",
-    icon: "<i class='bx bx-calendar-check'></i>",
+    icon: "<i class='bx bx-calendar-check'></i>"
   },
   {
     id: 1,
     title: "Quality Outcome",
     description: "My main target is 100% client satifaction from the outcome",
-    icon: "<i class='bx bxs-heart' ></i>",
-  },
+    icon: "<i class='bx bxs-heart' ></i>"
+  }
 ];
 
 (function renderPersonalSkills() {
@@ -201,7 +201,7 @@ const freelancing_journey = [
     description:
       "I have worked with several projects as a Individual freelancer at fiverr.",
     link: "https://www.fiverr.com/users/iamvihangasilva",
-    logo: "fiverr.svg",
+    logo: "fiverr.svg"
   },
   {
     id: 2,
@@ -211,7 +211,7 @@ const freelancing_journey = [
     description:
       "I joined with Duber LTD UK based startup company as a freelance developer. I have manage 2 Web Applications and 3+ Backend services related to company products",
     link: "https://duber.uk",
-    logo: "duber.svg",
+    logo: "duber.svg"
   },
   {
     id: 3,
@@ -221,8 +221,8 @@ const freelancing_journey = [
     description:
       "Duber is a drone pilot hiring online platform, Currently Im managing all technical related of Duber such like Cloud computing management,Backend and Frontend maintaince etc.",
     link: "https://duber.uk",
-    logo: "duber.svg",
-  },
+    logo: "duber.svg"
+  }
 ];
 
 (function renderFreelanceCard() {
@@ -256,33 +256,33 @@ const programming_language_data = [
   {
     id: 1,
     title: "JavaScript",
-    icon: `<i class="bx bxl-javascript" style="color: #e7bd00"></i>`,
+    icon: `<i class="bx bxl-javascript" style="color: #e7bd00"></i>`
   },
   {
     id: 1,
     title: "Python",
-    icon: `<i class="bx bxl-python" style="color: #152864"></i>`,
+    icon: `<i class="bx bxl-python" style="color: #152864"></i>`
   },
   {
     id: 1,
     title: "TypeScript",
-    icon: `<i class="bx bxl-typescript" style="color: #0061e0"></i>`,
+    icon: `<i class="bx bxl-typescript" style="color: #0061e0"></i>`
   },
   {
     id: 1,
     title: "GoLang",
-    icon: `<i class="bx bxl-go-lang" style="color: #1c99ff"></i>`,
+    icon: `<i class="bx bxl-go-lang" style="color: #1c99ff"></i>`
   },
   {
     id: 1,
     title: "GraphQL",
-    icon: `<i class="bx bxl-graphql" style="color: #d1009d"></i>`,
+    icon: `<i class="bx bxl-graphql" style="color: #d1009d"></i>`
   },
   {
     id: 1,
     title: "C / C++",
-    icon: `<i class="bx bxl-c-plus-plus" style="color: #1400c9"></i>`,
-  },
+    icon: `<i class="bx bxl-c-plus-plus" style="color: #1400c9"></i>`
+  }
 ];
 
 (function renderFreelanceCard() {
@@ -308,63 +308,63 @@ const frameworks = [
   {
     id: 1,
     title: "NodeJS",
-    icon: `<i class='bx bxl-nodejs' style="color: #008628"></i>`,
+    icon: `<i class='bx bxl-nodejs' style="color: #008628"></i>`
   },
   {
     id: 2,
     title: "ReactJS",
-    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`,
+    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`
   },
   {
     id: 3,
     title: "TailwindCSS",
-    icon: `<i class='bx bxl-tailwind-css' style="color: #27a9ff"></i>`,
+    icon: `<i class='bx bxl-tailwind-css' style="color: #27a9ff"></i>`
   },
   {
     id: 4,
     title: "MongoDB",
-    icon: `<i class='bx bxl-mongodb' style="color: #008127"></i>`,
+    icon: `<i class='bx bxl-mongodb' style="color: #008127"></i>`
   },
   {
     id: 6,
     title: "Docker",
-    icon: `<i class='bx bxl-docker' style="color: #008ada"></i>`,
+    icon: `<i class='bx bxl-docker' style="color: #008ada"></i>`
   },
   {
     id: 5,
     title: "React Native",
-    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`,
+    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`
   },
   {
     id: 7,
     title: "AWS",
-    icon: `<i class='bx bxl-aws' style="color: #da6900"></i>`,
+    icon: `<i class='bx bxl-aws' style="color: #da6900"></i>`
   },
   {
     id: 8,
     title: "Git",
-    icon: `<i class='bx bxl-git' style="color: #da2c00"></i>`,
+    icon: `<i class='bx bxl-git' style="color: #da2c00"></i>`
   },
   {
     id: 9,
     title: "Firebase",
-    icon: `<i class='bx bxl-firebase' style="color: #ffc116"></i>`,
+    icon: `<i class='bx bxl-firebase' style="color: #ffc116"></i>`
   },
   {
     id: 10,
     title: "Django",
-    icon: `<i class='bx bxl-django' style="color: #008341"></i>`,
+    icon: `<i class='bx bxl-django' style="color: #008341"></i>`
   },
   {
     id: 11,
     title: "Redux",
-    icon: `<i class='bx bxl-redux' style="color: #830083"></i>`,
+    icon: `<i class='bx bxl-redux' style="color: #830083"></i>`
   },
   {
     id: 12,
     title: "Sass CSS",
-    icon: `<i class='bx bxl-sass' style="color: #ff00bf"></i>`,
-  },
+    icon: `<i class='bx bxl-sass' style="color: #ff00bf"></i>`
+  }
 ];
 
 (function renderFrameworkCard() {

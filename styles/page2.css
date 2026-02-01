@@ -26,6 +26,10 @@
   letter-spacing: 1.2px;
 }
 
+.full_header#about {
+  margin-top: 40px;
+}
+
 .full_header i {
   font-size: 1.2rem;
 }

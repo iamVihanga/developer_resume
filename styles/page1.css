@@ -106,8 +106,8 @@
 }
 
 .page_1 .grid_col .contacts_col {
-  padding: 0 10px;
-  padding-bottom: 30px;
+  padding: 10px 0px;
+  padding-top: 15px;
 }
 
 .page_1 .grid_col .contacts_col .contact_category {
@@ -118,15 +118,28 @@
   margin-top: 1.4rem;
 }
 
+.page_1 .grid_col .contacts_col .contact_category:first-child {
+  margin-top: 0rem;
+}
+
 .page_1 .grid_col .contacts_col .contact_category i {
   font-size: 20px;
   margin-bottom: 0.6rem;
+}
+
+.page_1 .grid_col .contacts_col .contact_category p.contact-list-title {
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #313131;
+  margin-bottom: 4px;
 }
 
 .page_1 .grid_col .contacts_col .contact_category p {
   font-size: 11px;
   font-weight: 500;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .page_1 .grid_col .socials_col {
