@@ -210,19 +210,22 @@ const programming_language_data = [
     id: 1,
     title: "TypeScript",
     subtitle: "Primary",
-    icon: `<iconify-icon icon="logos:typescript-icon" width="32"></iconify-icon>`
+    icon: "logos:typescript-icon",
+    width: 32
   },
   {
     id: 2,
     title: "Python",
     subtitle: "Secondary",
-    icon: `<iconify-icon icon="logos:python" width="32"></iconify-icon>`
+    icon: "logos:python",
+    width: 32
   },
   {
     id: 3,
     title: "Go Lang",
     subtitle: "Learning",
-    icon: `<iconify-icon icon="logos:go" width="48"></iconify-icon>`
+    icon: "logos:go",
+    width: 32
   }
 ];
 
@@ -236,7 +239,7 @@ const programming_language_data = [
     .map(
       (item) => `
       <div class="language_item primary_lang">
-        ${item.icon}
+        ${getIconSVG(item.icon, item.width, item.width)}
         <div class="lang_info">
           <h2>${item.title}</h2>
           <span>${item.subtitle}</span>
@@ -252,175 +255,59 @@ const programming_language_data = [
 // Categorized Tech Stack
 const tech_stack = {
   frontend: [
-    {
-      title: "Next.js",
-      icon: `<iconify-icon icon="logos:nextjs-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "React.js",
-      icon: `<iconify-icon icon="logos:react" width="20"></iconify-icon>`
-    },
-    {
-      title: "Astro",
-      icon: `<iconify-icon icon="logos:astro-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "TailwindCSS",
-      icon: `<iconify-icon icon="logos:tailwindcss-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Tanstack",
-      icon: `<iconify-icon icon="logos:react-query-icon" width="20"></iconify-icon>`
-    }
+    { title: "Next.js", icon: "logos:nextjs-icon" },
+    { title: "React.js", icon: "logos:react" },
+    { title: "Astro", icon: "logos:astro-icon" },
+    { title: "TailwindCSS", icon: "logos:tailwindcss-icon" },
+    { title: "Tanstack", icon: "logos:react-query-icon" }
   ],
   backend: [
-    {
-      title: "Node.js",
-      icon: `<iconify-icon icon="logos:nodejs-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Hono",
-      icon: `<iconify-icon icon="logos:hono" width="15" width="15"></iconify-icon>`
-    },
-    {
-      title: "NestJS",
-      icon: `<iconify-icon icon="logos:nestjs" width="20"></iconify-icon>`
-    },
-    {
-      title: "Bun",
-      icon: `<iconify-icon icon="logos:bun" width="20"></iconify-icon>`
-    },
-    {
-      title: "Cloudflare Wrangler",
-      icon: `<iconify-icon icon="logos:cloudflare-icon" width="20"></iconify-icon>`
-    }
+    { title: "Node.js", icon: "logos:nodejs-icon" },
+    { title: "Hono", icon: "logos:hono" },
+    { title: "NestJS", icon: "logos:nestjs" },
+    { title: "Bun", icon: "logos:bun" },
+    { title: "Cloudflare Wrangler", icon: "logos:cloudflare-icon" }
   ],
   database: [
-    {
-      title: "PostgreSQL",
-      icon: `<iconify-icon icon="logos:postgresql" width="20"></iconify-icon>`
-    },
-    {
-      title: "MongoDB",
-      icon: `<iconify-icon icon="logos:mongodb-icon" width="20" height="20"></iconify-icon>`
-    },
+    { title: "PostgreSQL", icon: "logos:postgresql" },
+    { title: "MongoDB", icon: "logos:mongodb-icon" },
     {
       title: "Drizzle ORM",
-      icon: `<iconify-icon icon="simple-icons:drizzle" style="color: #c5f74f" width="20"></iconify-icon>`
+      icon: "simple-icons:drizzle",
+      style: "color: #c5f74f"
     },
-    {
-      title: "Prisma",
-      icon: `<iconify-icon icon="logos:prisma" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Neon",
-      icon: `<iconify-icon icon="logos:neon-icon" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Supabase",
-      icon: `<iconify-icon icon="logos:supabase-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Redis",
-      icon: `<iconify-icon icon="logos:redis" width="20"></iconify-icon>`
-    },
-    {
-      title: "BetterAuth",
-      icon: `<iconify-icon icon="simple-icons:betterauth" width="20"></iconify-icon>`
-    }
+    { title: "Prisma", icon: "logos:prisma" },
+    { title: "Neon", icon: "logos:neon-icon" },
+    { title: "Supabase", icon: "logos:supabase-icon" },
+    { title: "Redis", icon: "logos:redis" },
+    { title: "BetterAuth", icon: "simple-icons:betterauth" }
   ],
   ecommerce: [
-    {
-      title: "MedusaJS",
-      icon: `<iconify-icon icon="simple-icons:medusa" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Stripe",
-      icon: `<iconify-icon icon="bi:stripe" width="20" height="20" style="color: #6a1dfa"></iconify-icon>`
-    },
-    {
-      title: "Odoo ERP",
-      icon: `<iconify-icon icon="simple-icons:odoo" style="color: #875a7b" width="20"></iconify-icon>`
-    },
-    {
-      title: "PayloadCMS",
-      icon: `<iconify-icon icon="logos:payload" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Strapi",
-      icon: `<iconify-icon icon="logos:strapi-icon" width="20" height="20"></iconify-icon>`
-    }
+    { title: "MedusaJS", icon: "simple-icons:medusa" },
+    { title: "Stripe", icon: "bi:stripe", style: "color: #6a1dfa" },
+    { title: "Odoo ERP", icon: "simple-icons:odoo", style: "color: #875a7b" },
+    { title: "PayloadCMS", icon: "logos:payload" },
+    { title: "Strapi", icon: "logos:strapi-icon" }
   ],
   cloud: [
-    {
-      title: "AWS",
-      icon: `<iconify-icon icon="logos:aws" width="20"></iconify-icon>`
-    },
-    {
-      title: "Vercel",
-      icon: `<iconify-icon icon="logos:vercel-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Workers",
-      icon: `<iconify-icon icon="logos:cloudflare-workers-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Docker",
-      icon: `<iconify-icon icon="logos:docker-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "Kubernetes",
-      icon: `<iconify-icon icon="logos:kubernetes" width="20"></iconify-icon>`
-    }
+    { title: "AWS", icon: "logos:aws" },
+    { title: "Vercel", icon: "logos:vercel-icon" },
+    { title: "Workers", icon: "logos:cloudflare-workers-icon" },
+    { title: "Docker", icon: "logos:docker-icon" },
+    { title: "Kubernetes", icon: "logos:kubernetes" }
   ],
   tools: [
-    {
-      title: "Git",
-      icon: `<iconify-icon icon="logos:git-icon" width="20"></iconify-icon>`
-    },
-    {
-      title: "REST API",
-      icon: `<iconify-icon icon="mdi:api" style="color: #009688" width="20"></iconify-icon>`
-    },
-    {
-      title: "GraphQL",
-      icon: `<iconify-icon icon="logos:graphql" width="20"></iconify-icon>`
-    },
-
-    {
-      title: "Turborepo",
-      icon: `<iconify-icon icon="logos:turborepo-icon" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Shadcn UI",
-      icon: `<iconify-icon icon="vscode-icons:file-type-light-shadcn" width="20" height="20"></iconify-icon>`
-    },
-
-    {
-      title: "PNPM",
-      icon: `<iconify-icon icon="devicon:pnpm" width="15" height="15"></iconify-icon>`
-    },
-    {
-      title: "NPM",
-      icon: `<iconify-icon icon="devicon:npm" width="15" height="15"></iconify-icon>`
-    },
-
-    {
-      title: "Sentry",
-      icon: `<iconify-icon icon="skill-icons:sentry" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "SocketIO",
-      icon: `<iconify-icon icon="devicon:socketio" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "Vitest",
-      icon: `<iconify-icon icon="logos:vitest" width="20" height="20"></iconify-icon>`
-    },
-    {
-      title: "n8n",
-      icon: `<iconify-icon icon="simple-icons:n8n" width="20" height="20" style="color: #ff193f"></iconify-icon>`
-    }
+    { title: "Git", icon: "logos:git-icon" },
+    { title: "REST API", icon: "mdi:api", style: "color: #009688" },
+    { title: "GraphQL", icon: "logos:graphql" },
+    { title: "Turborepo", icon: "logos:turborepo-icon" },
+    { title: "Shadcn UI", icon: "vscode-icons:file-type-light-shadcn" },
+    { title: "PNPM", icon: "devicon:pnpm" },
+    { title: "NPM", icon: "devicon:npm" },
+    { title: "Sentry", icon: "skill-icons:sentry" },
+    { title: "SocketIO", icon: "devicon:socketio" },
+    { title: "Vitest", icon: "logos:vitest" },
+    { title: "n8n", icon: "simple-icons:n8n", style: "color: #ff193f" }
   ]
 };
 
@@ -433,7 +320,7 @@ const tech_stack = {
       .map(
         (item) => `
         <div class="tech_item">
-          ${item.icon}
+          ${getIconSVG(item.icon, 20, 20, item.style || "")}
           <span>${item.title}</span>
         </div>
       `
