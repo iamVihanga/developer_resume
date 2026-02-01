@@ -146,35 +146,48 @@ const work_experience_shortList = [
 const personal_skills = [
   {
     id: 1,
-    title: "Collaborative Working",
+    title: "Full Stack Development",
     description:
-      "Skills in using collaborative tools like Notions, ZenHub etc.",
-    icon: "<i class='bx bxs-group' ></i>"
+      "End-to-end application development from UI to database architecture",
+    icon: "<i class='bx bx-code-alt'></i>"
   },
   {
-    id: 1,
-    title: "Communication",
-    description: "Ability to work with english and handlling the accent",
-    icon: "<i class='bx bxs-user-voice'></i>"
+    id: 2,
+    title: "System Architecture",
+    description: "Designing scalable, maintainable software architectures",
+    icon: "<i class='bx bx-sitemap'></i>"
   },
   {
-    id: 1,
-    title: "Managed Workflow",
-    description: "Well management is a key specification of my tasks",
-    icon: "<i class='bx bx-calendar-check'></i>"
+    id: 3,
+    title: "API Development",
+    description: "RESTful & GraphQL APIs with best practices and documentation",
+    icon: "<i class='bx bx-transfer'></i>"
   },
   {
-    id: 1,
-    title: "Quality Outcome",
-    description: "My main target is 100% client satifaction from the outcome",
-    icon: "<i class='bx bxs-heart' ></i>"
+    id: 4,
+    title: "Agile & Collaboration",
+    description: "Experience with Scrum, Git workflows, and team collaboration",
+    icon: "<i class='bx bxs-group'></i>"
+  },
+  {
+    id: 5,
+    title: "Cloud & DevOps",
+    description: "CI/CD pipelines, containerization, and cloud deployments",
+    icon: "<i class='bx bx-cloud'></i>"
+  },
+  {
+    id: 6,
+    title: "Problem Solving",
+    description: "Analytical thinking with focus on clean, efficient solutions",
+    icon: "<i class='bx bx-bulb'></i>"
   }
 ];
 
 (function renderPersonalSkills() {
   const personalSkillSection = document.getElementById("personal-skills-area");
+  if (!personalSkillSection) return;
 
-  personalSkillSection.innerHTML += personal_skills
+  personalSkillSection.innerHTML = personal_skills
     .map(
       (skill) => `
       <div class="card">
@@ -192,110 +205,42 @@ const personal_skills = [
 
 // ---------------------------------------------------------
 
-const freelancing_journey = [
-  {
-    id: 1,
-    company: "Fiverr .inc",
-    position: "Full Stack Web Developer",
-    years: "2019 - 2022",
-    description:
-      "I have worked with several projects as a Individual freelancer at fiverr.",
-    link: "https://www.fiverr.com/users/iamvihangasilva",
-    logo: "fiverr.svg"
-  },
-  {
-    id: 2,
-    company: "Duber LTD",
-    position: "Full Stack Web Developer",
-    years: "2022 - 2023",
-    description:
-      "I joined with Duber LTD UK based startup company as a freelance developer. I have manage 2 Web Applications and 3+ Backend services related to company products",
-    link: "https://duber.uk",
-    logo: "duber.svg"
-  },
-  {
-    id: 3,
-    company: "Duber LTD",
-    position: "Technical Head",
-    years: "2023 - 2024",
-    description:
-      "Duber is a drone pilot hiring online platform, Currently Im managing all technical related of Duber such like Cloud computing management,Backend and Frontend maintaince etc.",
-    link: "https://duber.uk",
-    logo: "duber.svg"
-  }
-];
-
-(function renderFreelanceCard() {
-  const freelanceSection = document.getElementById("freelance-area");
-
-  freelanceSection.innerHTML += freelancing_journey
-    .map(
-      (item) => `
-      <div class="freelance_card">
-        <div class="row_1">
-          <span class="years">${item.years}</span>
-          <div id="dot"></div>
-          <div class="content">
-            <p class="position">${item.position}</p>
-            <p class="company">${item.company}</p>
-          </div>
-        </div>
-
-        <div class="right">
-          <img src="assets/${item.logo}" alt="" />
-        </div>
-      </div>
-  `
-    )
-    .join("");
-})();
-
-// ---------------------------------------------------------
-
 const programming_language_data = [
   {
     id: 1,
-    title: "JavaScript",
-    icon: `<i class="bx bxl-javascript" style="color: #e7bd00"></i>`
-  },
-  {
-    id: 1,
-    title: "Python",
-    icon: `<i class="bx bxl-python" style="color: #152864"></i>`
-  },
-  {
-    id: 1,
     title: "TypeScript",
-    icon: `<i class="bx bxl-typescript" style="color: #0061e0"></i>`
+    subtitle: "Primary",
+    icon: `<iconify-icon icon="logos:typescript-icon" width="32"></iconify-icon>`
   },
   {
-    id: 1,
-    title: "GoLang",
-    icon: `<i class="bx bxl-go-lang" style="color: #1c99ff"></i>`
+    id: 2,
+    title: "Python",
+    subtitle: "Secondary",
+    icon: `<iconify-icon icon="logos:python" width="32"></iconify-icon>`
   },
   {
-    id: 1,
-    title: "GraphQL",
-    icon: `<i class="bx bxl-graphql" style="color: #d1009d"></i>`
-  },
-  {
-    id: 1,
-    title: "C / C++",
-    icon: `<i class="bx bxl-c-plus-plus" style="color: #1400c9"></i>`
+    id: 3,
+    title: "Go Lang",
+    subtitle: "Learning",
+    icon: `<iconify-icon icon="logos:go" width="48"></iconify-icon>`
   }
 ];
 
-(function renderFreelanceCard() {
+(function renderProgrammingLanguages() {
   const languagesSection = document.getElementById(
     "programming-languages-area"
   );
+  if (!languagesSection) return;
 
-  languagesSection.innerHTML += programming_language_data
+  languagesSection.innerHTML = programming_language_data
     .map(
       (item) => `
-      <div class="language_item">
+      <div class="language_item primary_lang">
         ${item.icon}
-        <h2>${item.title}</h2>
+        <div class="lang_info">
+          <h2>${item.title}</h2>
+          <span>${item.subtitle}</span>
+        </div>
       </div>
   `
     )
@@ -304,80 +249,202 @@ const programming_language_data = [
 
 // ---------------------------------------------------------
 
-const frameworks = [
-  {
-    id: 1,
-    title: "NodeJS",
-    icon: `<i class='bx bxl-nodejs' style="color: #008628"></i>`
-  },
-  {
-    id: 2,
-    title: "ReactJS",
-    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`
-  },
-  {
-    id: 3,
-    title: "TailwindCSS",
-    icon: `<i class='bx bxl-tailwind-css' style="color: #27a9ff"></i>`
-  },
-  {
-    id: 4,
-    title: "MongoDB",
-    icon: `<i class='bx bxl-mongodb' style="color: #008127"></i>`
-  },
-  {
-    id: 6,
-    title: "Docker",
-    icon: `<i class='bx bxl-docker' style="color: #008ada"></i>`
-  },
-  {
-    id: 5,
-    title: "React Native",
-    icon: `<i class='bx bxl-react' style="color: #0078c9"></i>`
-  },
-  {
-    id: 7,
-    title: "AWS",
-    icon: `<i class='bx bxl-aws' style="color: #da6900"></i>`
-  },
-  {
-    id: 8,
-    title: "Git",
-    icon: `<i class='bx bxl-git' style="color: #da2c00"></i>`
-  },
-  {
-    id: 9,
-    title: "Firebase",
-    icon: `<i class='bx bxl-firebase' style="color: #ffc116"></i>`
-  },
-  {
-    id: 10,
-    title: "Django",
-    icon: `<i class='bx bxl-django' style="color: #008341"></i>`
-  },
-  {
-    id: 11,
-    title: "Redux",
-    icon: `<i class='bx bxl-redux' style="color: #830083"></i>`
-  },
-  {
-    id: 12,
-    title: "Sass CSS",
-    icon: `<i class='bx bxl-sass' style="color: #ff00bf"></i>`
-  }
-];
+// Categorized Tech Stack
+const tech_stack = {
+  frontend: [
+    {
+      title: "Next.js",
+      icon: `<iconify-icon icon="logos:nextjs-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "React.js",
+      icon: `<iconify-icon icon="logos:react" width="20"></iconify-icon>`
+    },
+    {
+      title: "Astro",
+      icon: `<iconify-icon icon="logos:astro-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "TailwindCSS",
+      icon: `<iconify-icon icon="logos:tailwindcss-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Tanstack",
+      icon: `<iconify-icon icon="logos:react-query-icon" width="20"></iconify-icon>`
+    }
+  ],
+  backend: [
+    {
+      title: "Node.js",
+      icon: `<iconify-icon icon="logos:nodejs-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Hono",
+      icon: `<iconify-icon icon="logos:hono" width="15" width="15"></iconify-icon>`
+    },
+    {
+      title: "NestJS",
+      icon: `<iconify-icon icon="logos:nestjs" width="20"></iconify-icon>`
+    },
+    {
+      title: "Bun",
+      icon: `<iconify-icon icon="logos:bun" width="20"></iconify-icon>`
+    },
+    {
+      title: "Cloudflare Wrangler",
+      icon: `<iconify-icon icon="logos:cloudflare-icon" width="20"></iconify-icon>`
+    }
+  ],
+  database: [
+    {
+      title: "PostgreSQL",
+      icon: `<iconify-icon icon="logos:postgresql" width="20"></iconify-icon>`
+    },
+    {
+      title: "MongoDB",
+      icon: `<iconify-icon icon="logos:mongodb-icon" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Drizzle ORM",
+      icon: `<iconify-icon icon="simple-icons:drizzle" style="color: #c5f74f" width="20"></iconify-icon>`
+    },
+    {
+      title: "Prisma",
+      icon: `<iconify-icon icon="logos:prisma" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Neon",
+      icon: `<iconify-icon icon="logos:neon-icon" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Supabase",
+      icon: `<iconify-icon icon="logos:supabase-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Redis",
+      icon: `<iconify-icon icon="logos:redis" width="20"></iconify-icon>`
+    },
+    {
+      title: "BetterAuth",
+      icon: `<iconify-icon icon="simple-icons:betterauth" width="20"></iconify-icon>`
+    }
+  ],
+  ecommerce: [
+    {
+      title: "MedusaJS",
+      icon: `<iconify-icon icon="simple-icons:medusa" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Stripe",
+      icon: `<iconify-icon icon="bi:stripe" width="20" height="20" style="color: #6a1dfa"></iconify-icon>`
+    },
+    {
+      title: "Odoo ERP",
+      icon: `<iconify-icon icon="simple-icons:odoo" style="color: #875a7b" width="20"></iconify-icon>`
+    },
+    {
+      title: "PayloadCMS",
+      icon: `<iconify-icon icon="logos:payload" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Strapi",
+      icon: `<iconify-icon icon="logos:strapi-icon" width="20" height="20"></iconify-icon>`
+    }
+  ],
+  cloud: [
+    {
+      title: "AWS",
+      icon: `<iconify-icon icon="logos:aws" width="20"></iconify-icon>`
+    },
+    {
+      title: "Vercel",
+      icon: `<iconify-icon icon="logos:vercel-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Workers",
+      icon: `<iconify-icon icon="logos:cloudflare-workers-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Docker",
+      icon: `<iconify-icon icon="logos:docker-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "Kubernetes",
+      icon: `<iconify-icon icon="logos:kubernetes" width="20"></iconify-icon>`
+    }
+  ],
+  tools: [
+    {
+      title: "Git",
+      icon: `<iconify-icon icon="logos:git-icon" width="20"></iconify-icon>`
+    },
+    {
+      title: "REST API",
+      icon: `<iconify-icon icon="mdi:api" style="color: #009688" width="20"></iconify-icon>`
+    },
+    {
+      title: "GraphQL",
+      icon: `<iconify-icon icon="logos:graphql" width="20"></iconify-icon>`
+    },
 
-(function renderFrameworkCard() {
-  const frameworkSection = document.getElementById("frameworks-area");
+    {
+      title: "Turborepo",
+      icon: `<iconify-icon icon="logos:turborepo-icon" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Shadcn UI",
+      icon: `<iconify-icon icon="vscode-icons:file-type-light-shadcn" width="20" height="20"></iconify-icon>`
+    },
 
-  frameworkSection.innerHTML += frameworks
-    .map(
-      (item) => `
-      <div class="language_item">
-        ${item.icon}
-        <h2>${item.title}</h2>
-      </div>
-  `
-    )
-    .join("");
+    {
+      title: "PNPM",
+      icon: `<iconify-icon icon="devicon:pnpm" width="15" height="15"></iconify-icon>`
+    },
+    {
+      title: "NPM",
+      icon: `<iconify-icon icon="devicon:npm" width="15" height="15"></iconify-icon>`
+    },
+
+    {
+      title: "Sentry",
+      icon: `<iconify-icon icon="skill-icons:sentry" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "SocketIO",
+      icon: `<iconify-icon icon="devicon:socketio" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "Vitest",
+      icon: `<iconify-icon icon="logos:vitest" width="20" height="20"></iconify-icon>`
+    },
+    {
+      title: "n8n",
+      icon: `<iconify-icon icon="simple-icons:n8n" width="20" height="20" style="color: #ff193f"></iconify-icon>`
+    }
+  ]
+};
+
+(function renderTechStack() {
+  const renderCategory = (elementId, items) => {
+    const element = document.getElementById(elementId);
+    if (!element) return;
+
+    element.innerHTML = items
+      .map(
+        (item) => `
+        <div class="tech_item">
+          ${item.icon}
+          <span>${item.title}</span>
+        </div>
+      `
+      )
+      .join("");
+  };
+
+  renderCategory("frontend-stack", tech_stack.frontend);
+  renderCategory("backend-stack", tech_stack.backend);
+  renderCategory("database-stack", tech_stack.database);
+  renderCategory("ecommerce-stack", tech_stack.ecommerce);
+  renderCategory("cloud-stack", tech_stack.cloud);
+  renderCategory("tools-stack", tech_stack.tools);
 })();

@@ -2,6 +2,10 @@
   height: 200px;
 }
 
+.page_3 .grid_col#left_side .text h1 {
+  font-size: 80px;
+}
+
 .page_3 .certificate_list {
   margin-top: 30px;
   display: flex;
@@ -41,4 +45,177 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+}
+
+/* Programming Languages - Enhanced */
+.page_3 .programming_languages_area {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.page_3 .programming_languages_area .language_item.primary_lang {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  flex: 1;
+}
+
+.page_3 .programming_languages_area .language_item.primary_lang i {
+  font-size: 38px;
+}
+
+.page_3 .programming_languages_area .language_item .lang_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_3 .programming_languages_area .language_item .lang_info h2 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.page_3 .programming_languages_area .language_item .lang_info span {
+  font-size: 10px;
+  color: #555;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tech Stack Section - Categorized */
+.page_3 .tech_stack_section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.page_3 .tech_category {
+  margin-bottom: 20px;
+}
+
+.page_3 .tech_category .category_title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.page_3 .tech_category .category_title i {
+  font-size: 14px;
+}
+
+.page_3 .tech_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page_3 .tech_item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.507);
+}
+
+.page_3 .tech_item i {
+  font-size: 20px;
+}
+
+.page_3 .tech_item span {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Personal Skills / Core Competencies */
+.page_3 .personal_skills_area {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.page_3 .personal_skills_area .card {
+  border-radius: 7px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: flex-start;
+  column-gap: 10px;
+  padding: 10px 12px;
+}
+
+.page_3 .personal_skills_area .card .icon i {
+  font-size: 22px;
+}
+
+.page_3 .personal_skills_area .card .content h2 {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.page_3 .personal_skills_area .card .content h5 {
+  font-size: 9px;
+  font-weight: 400;
+  color: #000000b9;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+/* GitHub Section */
+.page_3 .github_section {
+  margin: 15px 20px;
+  padding: 15px 20px;
+  background: #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.page_3 .github_section .github_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.page_3 .github_section .github_item > i {
+  font-size: 32px;
+}
+
+.page_3 .github_section .github_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_3 .github_section .github_content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.page_3 .github_section .github_content a:hover {
+  text-decoration: underline;
+}
+
+.page_3 .github_section .github_content span {
+  font-size: 9px;
+  color: #ffffffa0;
+  margin-top: 2px;
 }
